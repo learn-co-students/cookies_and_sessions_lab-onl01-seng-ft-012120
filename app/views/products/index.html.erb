@@ -8,11 +8,11 @@
 
 <% end %>
 
-<% if session[:cart] %>
-  <% session[:cart].each do |product| %>
-    <li><%= product %></li>
-  <% end %>
+
+<% cart.each do |product| %>
+  <li><%= product %></li>
 <% end %>
+
 <ul>
 
 
