@@ -1,0 +1,19 @@
+<%= form_tag do %>
+<p>
+  <%= label_tag :product, 'Product' %>
+  <%= text_field_tag :product %>
+</p>
+ 
+ <%= submit_tag 'add to cart' %>
+
+<% end %>
+
+<% if session[:cart] %>
+  <% session[:cart].each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+<% end %>
+<ul>
+
+
+</ul>
