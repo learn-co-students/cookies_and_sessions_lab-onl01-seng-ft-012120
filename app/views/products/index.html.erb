@@ -1,0 +1,11 @@
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+<form action="/" method="post">
+    <input name="product" id="product" type="text">
+    <button type="submit" >add to cart</button>
+</form>
+<ul>
+<% cart.each do |product| %>
+<li> <%= product %></li>
+<% end %>
+</ul>
