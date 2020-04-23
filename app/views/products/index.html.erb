@@ -1,0 +1,12 @@
+<ul>  
+  <% cart.each do |product| %>
+    <li><%= product %></li>
+  <% end %>
+</ul>
+
+
+<%= form_for :product, url: products_path do %>
+    <%= label_tag(:product, "Add product:") %>
+    <%= text_field_tag(:product) %>
+    <%= submit_tag("add to cart") %>
+<% end %>
