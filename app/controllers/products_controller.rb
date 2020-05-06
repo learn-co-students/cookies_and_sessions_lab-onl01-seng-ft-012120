@@ -1,4 +1,4 @@
-class ProductsController < ActionController::Base
+class ProductsController < ApplicationController
 
     def index 
         @cart = cart
@@ -6,6 +6,6 @@ class ProductsController < ActionController::Base
 
     def add
         @product = params['product']
-        session[:cart] << @product
+        cart << @product
     end
 end
